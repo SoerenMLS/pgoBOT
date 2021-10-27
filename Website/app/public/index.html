@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; text/html">
+    <title>PgoBot</title>
+</head>
+<body>
+    <h1>PGO BOT</h1>
+    <div>
+        <button type="button" onclick="oAuth()">Authorize Twitch Account</button> 
+    </div>
+</body>
+
+<script>
+
+let TwitchURL = "https://id.twitch.tv/oauth2/authorize?client_id=vmb8abexptbl2sdn6eg8eqd0m7bp1a&redirect_uri=http://localhost:3000&response_type=code&scope=moderation:read+user:read:email";
+
+function oAuth(){
+    window.location.href = TwitchURL;
+}
+
+</script>
+
+</html>

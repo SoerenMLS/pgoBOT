@@ -1,0 +1,28 @@
+{
+  "name": "pgoweb",
+  "version": "1.0.0",
+  "description": "a simple website for my bot?",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only ./app/app.ts",
+    "prod": "tsc && node ./build/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "polter1337",
+  "license": "ISC",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.11",
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.4",
+    "ts-node-dev": "^1.1.6",
+    "ws": "^7.4.4"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.6.9",
+    "@types/ws": "^7.4.0",
+    "typescript": "^4.2.3"
+  }
+}
